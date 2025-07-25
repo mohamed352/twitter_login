@@ -41,9 +41,9 @@ class _MyAppState extends State<MyApp> {
                 child: TextButton(
                   child: const Text('use Twitter API v1.1'),
                   style: ButtonStyle(
-                    foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
-                    backgroundColor: MaterialStateProperty.all<Color>(Colors.blueAccent),
-                    minimumSize: MaterialStateProperty.all<Size>(const Size(160, 48)),
+                    foregroundColor: WidgetStateProperty.all<Color>(Colors.white),
+                    backgroundColor: WidgetStateProperty.all<Color>(Colors.blueAccent),
+                    minimumSize: WidgetStateProperty.all<Size>(const Size(160, 48)),
                   ),
                   onPressed: () async {
                     await login();
